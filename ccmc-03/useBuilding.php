@@ -1,3 +1,8 @@
+<?php
+require_once("class/Building.php");
+$kasumigaseki = new Building("霞が関ビル", 147);
+$sunshine = new Building("サンシャイン60", 240);
+?>
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -11,8 +16,8 @@
 <body>
 	<h1>Buildingクラスを利用する</h1>
 	<dl>
-		<dt>霞が関ビル</dt>
-		<dd>霞が関ビルの高さは147mです。</dd>
+		<dt><?= $kasumigaseki->getName() ?></dt>
+		<dd><?= $kasumigaseki->getProfile() ?></dd>
 	</dl>
 	<dl>
 		<dt>サンシャイン60</dt>
